@@ -2,89 +2,70 @@
 
 .social-media-div {
   font-size: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+
+  &.left-align {
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 .icon-button {
-  margin-bottom: 10px;
-}
-
-.icon-button i {
-  color: $textColorDark;
-  border-radius: 2.6rem;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 1.3rem;
-  height: 2.6rem;
-  line-height: 2.6rem;
-  margin: 0 5px;
-  position: relative;
-  text-align: center;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
   width: 2.6rem;
-  margin-bottom: 10px;
-  transition: 0.2s ease-in;
-}
+  height: 2.6rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px 10px 0;
+  background-color: white;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 
-.facebook i {
-  background-color: $faceBook;
-}
-
-.linkedin i {
-  background-color: $linkedin;
-}
-
-.github i {
-  background-color: $github;
-}
-
-.gitlab i {
-  background-color: $gitlab;
-}
-
-.google i {
-  background-color: $google;
-}
-
-.twitter i {
-  background-color: $twitter;
-}
-
-.medium i {
-  background-color: $medium;
-}
-
-.stack-overflow i {
-  background-color: $stackoverflow;
-}
-
-.kaggle i {
-  background-color: $kaggle;
-}
-
-.instagram i {
-  background-color: $instagram;
-}
-
-/* Hover Transition */
-.twitter i:hover,
-.google i:hover,
-.gitlab i:hover,
-.github i:hover,
-.linkedin i:hover,
-.facebook i:hover,
-.instagram i:hover,
-.stack-overflow i:hover,
-.kaggle i:hover,
-.medium i:hover {
-  background-color: $textColor;
-}
-
-/* Media Query */
-@media (max-width: 768px) {
-  .social-media-div {
-    text-align: center;
+  img {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: block;
+    margin: 0;
+    padding: 0;
+    object-fit: contain;
+    aspect-ratio: 1 / 1;
+    filter: grayscale(0);
+    transition: filter 0.3s;
   }
+
+  &:hover {
+    background-color: $textColor;
+    transform: scale(1.08);
+
+    img {
+      filter: brightness(0) invert(1);
+    }
+  }
+}
+
+/* Social Platform Colors (optional, keep if you want colored backgrounds) */
+.facebook     { background-color: $faceBook; }
+.linkedin     { background-color: $linkedin; }
+.github       { background-color: $github; }
+.gitlab       { background-color: $gitlab; }
+.google       { background-color: $google; }
+.twitter      { background-color: $twitter; }
+.medium       { background-color: $medium; }
+.stack-overflow { background-color: $stackoverflow; }
+.kaggle       { background-color: $kaggle; }
+.instagram    { background-color: $instagram; }
+.codechef,
+.codeforces,
+.leetcode,
+.gfg {
+  background-color: white;
 }
