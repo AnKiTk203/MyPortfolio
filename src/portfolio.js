@@ -93,7 +93,7 @@ https://fontawesome.com/icons?d=gallery */
     },
     {
       skillName: "sql-database",
-      customIcon: "mysql.png"
+      customIcon: "./mysql.png"
     },
     {
       skillName: "firebase",

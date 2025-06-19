@@ -47,7 +47,7 @@ export default function SocialMedia() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={src} alt={alt} />
+            <img src={`./${src}`} alt={alt} />
           </a>
         );
       })}

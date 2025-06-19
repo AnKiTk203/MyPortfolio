@@ -11,7 +11,7 @@ export default function SoftwareSkill() {
           <li key={i} className="software-skill-inline" name={skills.skillName}>
             {skills.customIcon ? (
               <img
-                src={`/icons/${skills.customIcon}`}
+                src={`./icons/${skills.customIcon}`}
                 alt={skills.skillName}
                 className="custom-skill-icon"
               />
