@@ -1,19 +1,23 @@
 name: Check Format
 on:
   push:
+    branches:
+      - main
+      - gh-pages
   pull_request:
       branches:
-        - master
+        - main
+        - gh-pages
 jobs:
   check-format:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           persist-credentials: false
 
-      - uses: actions/setup-node@v3.8.1
+      - uses: actions/setup-node@v4
         with:
           node-version: 18.x
       
