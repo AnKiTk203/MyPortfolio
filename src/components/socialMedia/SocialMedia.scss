@@ -53,16 +53,36 @@
 }
 
 /* Social Platform Colors (optional, keep if you want colored backgrounds) */
-.facebook     { background-color: $faceBook; }
-.linkedin     { background-color: $linkedin; }
-.github       { background-color: $github; }
-.gitlab       { background-color: $gitlab; }
-.google       { background-color: $google; }
-.twitter      { background-color: $twitter; }
-.medium       { background-color: $medium; }
-.stack-overflow { background-color: $stackoverflow; }
-.kaggle       { background-color: $kaggle; }
-.instagram    { background-color: $instagram; }
+.facebook {
+  background-color: $faceBook;
+}
+.linkedin {
+  background-color: $linkedin;
+}
+.github {
+  background-color: $github;
+}
+.gitlab {
+  background-color: $gitlab;
+}
+.google {
+  background-color: $google;
+}
+.twitter {
+  background-color: $twitter;
+}
+.medium {
+  background-color: $medium;
+}
+.stack-overflow {
+  background-color: $stackoverflow;
+}
+.kaggle {
+  background-color: $kaggle;
+}
+.instagram {
+  background-color: $instagram;
+}
 .codechef,
 .codeforces,
 .leetcode,

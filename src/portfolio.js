@@ -50,10 +50,10 @@ const skillsSection = {
   title: "What I do",
   subTitle: "Developing robust and secure android applications",
   skills: [
+    emoji("⚡Leverage the power of Android OS into real world application"),
     emoji(
-      "⚡Leverage the power of Android OS into real world application"
+      "⚡Focus on delivering Industry-Ready applications which are scalable and reliable"
     ),
-    emoji("⚡Focus on delivering Industry-Ready applications which are scalable and reliable"),
     emoji(
       "⚡ Integration of cool tech libraries and services such as Kotlin Coroutines / Retrofit / Firebase"
     )
@@ -98,8 +98,7 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "firebase",
       customIcon: "firebase.png"
-    },
-
+    }
   ],
   display: true // Set false to hide this section, defaults to true
 };

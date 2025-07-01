@@ -13,8 +13,6 @@ export default function Profile() {
     setrepo(array);
   }
 
-  
-
   useEffect(() => {
     if (openSource.showGithubProfile === "true") {
       const getProfileData = () => {
